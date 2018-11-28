@@ -148,7 +148,7 @@ try:
                 time.sleep(delay_time)  
             elif 'correct_ip' in command:
                 for queue in execution_pools:
-                    queue.put('Re sn?') 
+                    queue.put('sn?') 
                 while not all_queue_empty(execution_pools):
                     time.sleep(0.5)
                 
