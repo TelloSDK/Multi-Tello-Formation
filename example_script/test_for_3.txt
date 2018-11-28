@@ -1,0 +1,203 @@
+scan 3
+battery_check 20
+correct_ip
+1=0TQDF72EDB2WP0
+2=0TQDF72EDB347P
+3=0TQDF72EDB3665
+*>mon
+sync 15
+*>takeoff
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+1>jump 80 0 80 60 0 m1 m2
+2>jump 80 0 80 60 0 m2 m3
+3>jump 80 0 80 60 0 m3 m4
+sync 15
+1>jump 80 0 80 60 0 m2 m3
+2>jump 80 0 80 60 0 m3 m4
+3>jump 80 0 80 60 0 m4 m1
+sync 15
+1>jump 80 0 80 60 0 m3 m4
+2>jump 80 0 80 60 0 m4 m1
+3>jump 80 0 80 60 0 m1 m2
+sync 15
+1>jump 80 0 80 60 0 m4 m1
+2>jump 80 0 80 60 0 m1 m2
+3>jump 80 0 80 60 0 m2 m3
+sync 15
+*>land

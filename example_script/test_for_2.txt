@@ -1,0 +1,39 @@
+scan 2
+battery_check 20
+correct_ip
+1=0TQDF72EDBL0ZP
+2=0TQDF72EDB347P
+*>mon
+*>takeoff
+sync 15
+1>jump 50 0 80 60 0 m1 m2
+2>jump 50 0 80 60 0 m4 m3
+sync 15
+1>jump 50 0 80 60 0 m2 m1
+2>jump 50 0 80 60 0 m3 m4
+sync 15
+1>jump 50 0 80 60 0 m1 m2
+2>jump 50 0 80 60 0 m4 m3
+sync 15
+1>jump 50 0 80 60 0 m2 m1
+2>jump 50 0 80 60 0 m3 m4
+sync 15
+1>jump 50 0 80 60 0 m1 m2
+2>jump 50 0 80 60 0 m4 m3
+sync 15
+1>jump 50 0 80 60 0 m2 m1
+2>jump 50 0 80 60 0 m3 m4
+sync 15
+1>jump 50 0 80 60 0 m1 m2
+2>jump 50 0 80 60 0 m4 m3
+sync 15
+1>jump 50 0 80 60 0 m2 m1
+2>jump 50 0 80 60 0 m3 m4
+sync 15
+1>jump 50 0 80 60 0 m1 m2
+2>jump 50 0 80 60 0 m4 m3
+sync 15
+1>jump 50 0 80 60 0 m2 m1
+2>jump 50 0 80 60 0 m3 m4
+sync 15
+*>land

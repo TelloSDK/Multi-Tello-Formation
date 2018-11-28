@@ -1,0 +1,12 @@
+scan 1
+battery_check 20
+correct_ip
+1=0TQDF72EDB2BP8
+*>mon
+*>takeoff
+sync 15
+1>go 50 0 80 60 m3
+sync 15
+1>flip r
+sync 15
+*>land
