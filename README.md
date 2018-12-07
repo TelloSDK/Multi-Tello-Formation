@@ -57,50 +57,56 @@ sync 10
   delay 1
   2>takeoff
   ```
-2. 设置Tello到ap模式：
-先安装python2.7和pip。python上官网下载，pip可使用get-pip.py文件（文件夹已附带）来安装，如使用python get-pip.py指令。
-运行
-Windows：
-```
-python -m pip install netifaces
-python -m pip install netaddr
-```
-Linux&&Macos：
-```
-sudo pip install netifaces
-sudo pip install netaddr
-sudo pip install matplotlib
-```
-以安装依赖。
+2. 环境配置及安装依赖项：
 
-1) 打开Tello
-2) 连上Tello Wi-Fi. (e.g. Tello-AB89C4)
-3) 在formation_setup.py里, 加入wifi名字以及wifi密码
-```
-set_ap(ssid, password)
-``` 
-4) 保存并且运行
-```
-python formation_setup.py
-``` 
-如看到
-```
-sending command command
-from ('192.168.10.1', 8889): ok
-sending command ap [your ssid] [your password]
-from ('192.168.10.1', 8889): OK,drone will reboot in 3s
-``` 
-就ok了
+- 使用一键安装脚本：
+  进入install文件夹，根据电脑的系统（windows,linux或macos）选择对应的脚本并运行（windows系统双击文件，linux或macos则打开命令行窗口并运行文件）
 
-3. 跑脚本
-```
-python multi_tello_test.py 文件名.txt
-```
-命令行将打出每一个条指令及其回复。执行结束后会把命令都存在log文件夹下，以测试结束时间命名。
+- 手动安装：
+  先安装python2.7和pip。python上官网下载，pip可使用get-pip.py文件（文件夹已附带）来安装，如使用python get-pip.py指令。
+  运行
+  Windows：
+  ```
+  python -m pip install netifaces
+  python -m pip install netaddr
+  ```
+  Linux&&Macos：
+  ```
+  sudo pip install netifaces
+  sudo pip install netaddr
+  sudo pip install matplotlib
+  ```
+  以安装依赖。
 
-4、方便地读取飞机SN
-连接飞机的wifi，运行 
-```
-python multi_tello_test.py ip.txt
-``` 
-可在命令行窗口打印得到产品序列号
+3. 设置Tello到ap模式
+      1) 打开Tello
+      2) 连上Tello Wi-Fi. (e.g. Tello-AB89C4)
+      3) 在formation_setup.py里, 加入wifi名字以及wifi密码
+      ```
+      set_ap(ssid, password)
+      ``` 
+      4) 保存并且运行
+      ```
+      python formation_setup.py
+      ``` 
+      如看到
+      ```
+      sending command command
+      from ('192.168.10.1', 8889): ok
+      sending command ap [your ssid] [your password]
+      from ('192.168.10.1', 8889): OK,drone will reboot in 3s
+      ``` 
+      就ok了
+
+4. 跑脚本
+  ```
+  python multi_tello_test.py 文件名.txt
+  ```
+  命令行将打出每一个条指令及其回复。执行结束后会把命令都存在log文件夹下，以测试结束时间命名。
+
+5. 方便地读取飞机SN
+  连接飞机的wifi，运行 
+  ```
+  python multi_tello_test.py ip.txt
+  ``` 
+  可在命令行窗口打印得到产品序列号
