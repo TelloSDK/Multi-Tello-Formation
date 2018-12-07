@@ -43,14 +43,12 @@ if %errorlevel% neq 0 (
 echo ------------------------------------------------------
 echo                   Downloading pip                    
 echo ------------------------------------------------------
-set /a retryCount=0
 if exist %pipPackage% goto :downpipinstall
 :downpip
 call :down %pipDown% %pipPackage%
 :downpipinstall
 python %pipPackage%
 python -m pip install -U pip
-python get-pip.py
 :downpipend
 python -m pip install --upgrade pip
 ::-------------------python-numpy python-matplotlib opencv-python的安装（pip方式）-------------------
