@@ -182,9 +182,9 @@ class Tello_Manager:
                 response_sof_part1 = ord(self.response[0])               
                 response_sof_part2 = ord(self.response[1])
                 if response_sof_part1 == 0x52 and response_sof_part2 == 0x65:
-                    response_index = ord(self.response[3])
+                    response_index = ord(self.response[5])
                     
-                    if response_index != self.last_response_index[ip]:
+                    if response_index < self.last_response_index[ip]:
                         #print '--------------------------response_index:%x %x'%(response_index,self.last_response_index)
                         print'[Multi_Response] ----Multi_Receive----IP:%s----Response:   %s ----\n' % (ip, self.response[7:])
                         self.log[ip][-1].add_response(self.response[7:],ip)
