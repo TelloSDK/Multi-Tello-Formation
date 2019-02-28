@@ -92,7 +92,7 @@ sync 10
   ```
   以安装依赖。
 
-3. 设置Tello到ap模式
+3. 设置Tello到station模式
       1) 打开Tello
       2) 连上Tello Wi-Fi. (e.g. Tello-AB89C4)
       3) 在formation_setup.py里, 加入wifi名字以及wifi密码

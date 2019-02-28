@@ -134,7 +134,7 @@ The supported script commands are as follows:
   
   to install realated dependencies. 
 
-3. Set up Tello to ap mode
+3. Set up Tello to station mode
 
       1) Turn on Tello
       2) Connected  to Tello's Wi-Fi. (e.g. Tello-AB89C4)
