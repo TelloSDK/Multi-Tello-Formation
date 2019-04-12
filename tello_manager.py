@@ -96,7 +96,7 @@ class Tello_Manager:
             netmask = ipinfo['netmask']
 
             # limit range of search. This will work for router subnets
-            if netmask != '255.255.255.0':
+            if not netmask.startswith('255.255.255'):
                 continue
 
             network = IPNetwork('%s/%s' % (address, netmask))
