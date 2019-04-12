@@ -48,15 +48,13 @@ class Tello_Manager:
         """
         print '[Start_Searching]Searching for %s available Tello...\n' % num
 
-        subnets, address = self.get_subnets()
+        networks = self.get_ipv4_networks()
         possible_addr = []
 
-        for subnet, netmask in subnets:
-            for ip in IPNetwork('%s/%s' % (subnet, netmask)):
-                # skip local and broadcast
-                if str(ip).split('.')[3] == '0' or str(ip).split('.')[3] == '255':
-                    continue
-                possible_addr.append(str(ip))
+        for network in networks:
+            for ip in network.iter_hosts():
+                if str(network.ip) != str(ip):
+                    possible_addr.append(str(ip))
 
         while len(self.tello_ip_list) < num:
             print '[Still_Searching]Trying to find Tello in subnets...\n'
@@ -65,11 +63,8 @@ class Tello_Manager:
             for tello_ip in self.tello_ip_list:
                 if tello_ip in possible_addr:
                     possible_addr.remove(tello_ip)
-            # skip server itself
+            # send each of the addresses a command.
             for ip in possible_addr:
-                if ip in address:
-                    continue
-
                 # record this command
                 self.log[ip].append(Stats('command', len(self.log[ip])))
                 self.socket.sendto(b'command', (ip, 8889))
@@ -81,23 +76,20 @@ class Tello_Manager:
             temp[ip] = self.log[ip]
         self.log = temp
 
-
-
-    def get_subnets(self):
+    def get_ipv4_networks(self):
         """
         Look through the server's internet connection and
-        returns subnet addresses and server ip
-        :return: list[str]: subnets
-                 list[str]: addr_list
+        returns ipv4 networks
+        :return: list[IPNetwork]: networks
         """
-        subnets = []
         ifaces = netifaces.interfaces()
-        addr_list = []
+        networks = []
         for myiface in ifaces:
             addrs = netifaces.ifaddresses(myiface)
 
             if socket.AF_INET not in addrs:
                 continue
+
             # Get ipv4 stuff
             ipinfo = addrs[socket.AF_INET][0]
             address = ipinfo['addr']
@@ -107,12 +99,9 @@ class Tello_Manager:
             if netmask != '255.255.255.0':
                 continue
 
-            # Create ip object and get
-            cidr = netaddr.IPNetwork('%s/%s' % (address, netmask))
-            network = cidr.network
-            subnets.append((network, netmask))
-            addr_list.append(address)
-        return subnets, addr_list
+            network = IPNetwork('%s/%s' % (address, netmask))
+            networks.append(network)
+        return networks
 
     def get_tello_list(self):
         return self.tello_list
